@@ -1,12 +1,12 @@
 
-import React , {useState} from 'react'
+import React , {useState } from 'react'
 import Logo from '../assets/Logo.png'
 import {FaBars ,FaTimes ,FaLinkedin , FaGithub} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
-
+    
     const [nav ,setNav] =useState(false)
     const handleClick = () => setNav(!nav)
 
@@ -47,22 +47,22 @@ const Navbar = () => {
                 <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 '>
                 <a
                 className='flex justify-between items-center w-full text-gray-300'
-                 href="/">Linkedin <FaLinkedin size={30} /></a>
+                 href="https://www.linkedin.com/in/dany-razzouqa/">Linkedin <FaLinkedin size={30} /></a>
                  </li>
                  <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] '>
                 <a
                 className='flex justify-between items-center w-full text-gray-300'
-                 href="/">GitHub <FaGithub size={30} /></a>
+                 href="https://github.com/danirazzouqa/Portfolio/commits?author=danirazzouqa">GitHub <FaGithub size={30} /></a>
                  </li>
                  <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-600 '>
                 <a
                 className='flex justify-between items-center w-full text-gray-300'
-                 href="/">Email <HiOutlineMail size={30} /></a>
+                 href="mailto:danirazzouqa@gmail.com.com?subject=SendMail&body=Description">Email <HiOutlineMail size={30} /></a>
                  </li>
                  <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-500 '>
                 <a
                 className='flex justify-between items-center w-full text-gray-300'
-                 href="/">Resume <BsFillPersonLinesFill size={30} /></a>
+                 href="https://dany.tiiny.site">Resume <BsFillPersonLinesFill size={30} /></a>
                  </li>
             </ul>
 
