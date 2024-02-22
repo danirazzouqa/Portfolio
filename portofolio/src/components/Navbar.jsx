@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../assets/Logo.png';
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -8,6 +8,21 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+
+  useEffect(() => {
+    if (nav) {
+      // Disable scrolling when the menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling when the menu is closed
+      document.body.style.overflow = 'visible';
+    }
+
+    // Cleanup function to enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = 'visible';
+    };
+  }, [nav]);
 
   return (
     <div className='fixed w-full h-[40px] flex items-center justify-between'>
