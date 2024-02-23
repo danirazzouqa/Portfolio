@@ -32,6 +32,7 @@ const Home = () => {
           <img src={myPic} alt='Dany Razzoqa' className='rounded-full md:w-[80%]  ' />
         </div>
       </div>
+      <div className='container mx-auto border-b-2 py-6'></div>
     </div>
   );
 };

@@ -42,7 +42,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="project" smooth={true} duration={500}>
+          <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
@@ -79,7 +79,7 @@ const Navbar = () => {
           <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] '>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href="https://github.com/danirazzouqa/Portfolio/commits?author=danirazzouqa"
+              href="https://github.com/danirazzouqa"
               target="_blank" // Open in a new tab
               rel="noopener noreferrer" // Recommended for security
             >

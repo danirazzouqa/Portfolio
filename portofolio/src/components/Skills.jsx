@@ -11,9 +11,9 @@ const Skills = () => {
   return (
     <div name='skills' className='w-full bg-slate-100'>
       {/* Container */}
-      <div className='container mx-auto px-4 py-8'>
+      <div className='container h-full mx-auto px-4 py-8'>
           <div>
-              <p className='text-4xl font-bold inline border-b-4 border-black '>Skills</p>
+              <p className='text-4xl font-bold '>Skills</p>
               <p className='py-4'>These are the technologies I've worked with</p>
           </div>
 
@@ -27,6 +27,7 @@ const Skills = () => {
               <SkillCard img={Tailwind} name="Tailwind" />
           </div>
       </div>
+      <div className='container mx-auto border-b-2 py-6'></div>
     </div>
   );
 };
