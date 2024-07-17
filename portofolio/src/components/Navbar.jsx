@@ -99,7 +99,7 @@ const Navbar = () => {
           <li className='w-[150px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-500 '>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href="https://danycv.tiiny.site"
+              href="https://danycvnew.tiiny.site"
               target="_blank" // Open in a new tab
               rel="noopener noreferrer" // Recommended for security
             >
